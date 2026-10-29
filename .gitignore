@@ -20,3 +20,4 @@ docs/
 PRODUCT.md
 DESIGN.md
 content/00-profile/cv/*.docx
+.DS_Store
