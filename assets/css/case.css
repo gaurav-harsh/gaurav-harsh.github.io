@@ -1,18 +1,18 @@
 .cs-head{padding:clamp(72px,10vw,140px) var(--margin) 0;display:grid;grid-template-columns:42% 1fr}
-.cs-head h1{grid-column:1/-1;font-weight:500;font-size:var(--step-display);line-height:.95;letter-spacing:-.04em;max-width:18ch}
+.cs-head h1{grid-column:1/-1;font-family:var(--font-display);font-weight:700;font-size:clamp(3rem,1rem + 8vw,8rem);line-height:.95;letter-spacing:-.035em;max-width:14ch}
 .cs-head .lede{grid-column:2;margin-top:48px;font-size:var(--step-lead);line-height:1.3;max-width:34ch}
 .cs-head dl{grid-column:1;grid-row:2;margin:48px 0 0;display:grid;gap:20px;max-width:32ch}
 .cs-head dt{color:var(--muted);font-size:var(--step-small)}
 .cs-head dd{margin:2px 0 0}
 .cs-sec{display:grid;grid-template-columns:42% 1fr;padding:var(--section) var(--margin) 0}
-.cs-sec>h2{font-weight:500;font-size:clamp(1.75rem,1.2rem+1.6vw,2.5rem);line-height:1.05;letter-spacing:-.025em;padding-right:48px}
+.cs-sec>h2{font-family:var(--font-display);font-weight:700;font-size:clamp(1.75rem,1.2rem + 1.6vw,2.5rem);line-height:1.05;letter-spacing:-.025em;padding-right:48px}
 .cs-body{max-width:none}
 .cs-body p,.cs-body li,.cs-body h3{max-width:62ch}
 .cs-body p+p,.cs-body ul+p,.cs-body p+ul{margin-top:1em}
 .cs-body ul{padding-left:1.1em;margin:0}
 .cs-body li+li{margin-top:.5em}
 .cs-body strong{font-weight:600}
-.cs-body .pull{font-size:var(--step-lead);line-height:1.3;color:var(--ink);margin-top:1.5em}
+.cs-body .pull{font-family:var(--font-display);font-size:var(--step-lead);line-height:1.3;color:var(--ink);margin-top:1.5em}
 .fig{margin:0 0 40px;background:var(--paper);color:var(--paper-ink);padding:24px}
 .fig img{width:100%;height:auto}
 .cs-body a{color:var(--accent)}
@@ -22,7 +22,7 @@
 .cs-next{display:block;margin-top:var(--section);padding:var(--section) var(--margin);background:var(--surface);text-decoration:none}
 .cs-next span{display:block;color:var(--muted);font-size:var(--step-small)}
 .cs-next span{margin-top:16px}
-.cs-next strong{display:block;font-weight:500;font-size:var(--step-head);line-height:1;letter-spacing:-.03em;transition:color 200ms}
+.cs-next strong{display:block;font-family:var(--font-display);font-weight:700;font-size:clamp(2rem, 1rem + 5vw, 5rem);line-height:1;letter-spacing:-.03em;transition:color 200ms}
 .cs-next:hover strong{color:var(--accent)}
 @media (max-width:1000px){
  .cs-head,.cs-sec{display:block}
@@ -41,3 +41,4 @@
 .cs-body h3{font-weight:600;font-size:1.0625rem;margin:2em 0 .6em}
 .cs-body h3:first-child{margin-top:0}
 .cs-head dd a{color:var(--accent)}
+.cs-next{text-decoration:none}
