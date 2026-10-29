@@ -42,3 +42,9 @@
 .cs-body h3:first-child{margin-top:0}
 .cs-head dd a{color:var(--accent)}
 .cs-next{text-decoration:none}
+.dg{display:block;width:100%;height:auto;font-family:var(--font)}
+.dg-line{fill:none;stroke:#1c1c1e;stroke-width:1.5}
+.dg-node{fill:#fff;stroke:#1c1c1e;stroke-width:1.5}
+.dg-focal{fill:#e7e8fb;stroke:#4649c9;stroke-width:2}
+.dg-name{font-size:14px;font-weight:600;fill:#1c1c1e}
+.dg-sub{font-size:12px;fill:#55555c}

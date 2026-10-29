@@ -4,14 +4,14 @@
   --surface-2: #cfcec7;
   --ink: #1c1c1e;
   --muted: #55555c;
-  --accent: #4f52d6;
+  --accent: #4649c9;
   --accent-ink: #ffffff;
-  --pen: #4f52d6;
+  --pen: #4649c9;
   --paper: #ffffff;
   --paper-ink: #1c1c1e;
 
   --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
-  --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-hand: "Caveat", "Segoe Script", cursive;
 
   --step-small: 0.875rem;
