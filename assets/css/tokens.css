@@ -1,0 +1,25 @@
+:root {
+  --bg: #0a0d14;
+  --surface: #131824;
+  --surface-2: #1b2232;
+  --ink: #e9edf3;
+  --muted: #a3acbb;
+  --accent: #5a9bfc;
+  --accent-ink: #0a0d14;
+  --paper: #e9edf3;
+  --paper-ink: #0a0d14;
+  --hl-1: #5a9bfc;
+  --hl-2: #8fb8ff;
+  --hl-3: #c4d8f7;
+
+  --font: "Erode", Georgia, "Times New Roman", serif;
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --step-display: clamp(3.25rem, 6.6vw, 6.5rem);
+
+  --margin: clamp(20px, 3.4vw, 48px);
+  --section: clamp(96px, 14vw, 200px);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
