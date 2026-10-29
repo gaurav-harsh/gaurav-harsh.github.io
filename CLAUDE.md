@@ -28,6 +28,7 @@ and want: problem → method → evidence → decision → measurable outcome. S
 - Read `docs/STATE.md` first; don't re-explore the repo.
 - Read files by line range; never read whole skill folders or `data/` CSVs.
 - Never read or edit `.claude/skills/**` unless debugging a skill.
+- Run skill scripts from the project root with relative paths (`python3 .claude/skills/...`) so allow rules match.
 - Short replies. No recaps of unchanged code.
 
 ## Memory routine
