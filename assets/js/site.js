@@ -23,6 +23,8 @@
     a.addEventListener('focus', function () { show(a); });
   });
   var l = document.querySelector('.ledger');
-  l.addEventListener('mouseleave', function () { peek.classList.remove('on'); });
-  l.addEventListener('focusout', function (e) { if (!l.contains(e.relatedTarget)) peek.classList.remove('on'); });
+  var first = l.querySelector('a');
+  show(first);
+  l.addEventListener('mouseleave', function () { show(first); });
+  l.addEventListener('focusout', function (e) { if (!l.contains(e.relatedTarget)) show(first); });
 })();
