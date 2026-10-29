@@ -1,0 +1,9 @@
+.DS_Store
+# third-party skills & their caches (sources pinned in CLAUDE.md)
+.claude/skills/design-taste-frontend/
+.claude/skills/impeccable/
+.claude/skills/ui-ux-pro-max/
+.claude/agents/impeccable-*.md
+.claude/settings.local.json
+.taste-skill/
+.impeccable/
