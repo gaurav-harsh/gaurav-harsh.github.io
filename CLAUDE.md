@@ -14,10 +14,14 @@ and want: problem → method → evidence → decision → measurable outcome. S
 - Accessibility target: WCAG 2.2 AA. Performance: fast on mobile, images ≤200KB, lazy-loaded.
 
 ## Skill routing (use ONE per job — don't stack them)
-- Art direction / building a page → `design-taste-frontend`
+- Art direction / building a page → `design-taste-frontend` (default builder)
+- `hallmark` → ONLY when the user names it (alternate builder / `audit` second opinion). Never run with taste on the same page.
 - Critique, audit, polish, a11y/UX review → `impeccable` (e.g. `/impeccable critique`, `audit`, `polish`)
 - Look up palettes, font pairs, UX rules → `ui-ux-pro-max` via its `search.py` script (cheap; prefer over reading data files)
-- Copy for CTAs, case studies → `design:ux-copy`; accessibility pass → `design:accessibility-review`
+- Any code writing → follow `ponytail` (smallest change, native HTML/CSS first). `/ponytail-review` before commits.
+- Case-study prose, bio, any visible text → write, then pass through `humanizer`. `design:ux-copy` for CTAs/microcopy.
+- Research artifacts (journey maps, flows, timelines, 2x2s, affinity/process diagrams) → `diagram-design` (static HTML/SVG)
+- Accessibility pass → `design:accessibility-review`
 - Visual check → built-in browser on a local file or `python3 -m http.server`
 
 ## Token rules
@@ -35,3 +39,8 @@ and want: problem → method → evidence → decision → measurable outcome. S
 - design-taste-frontend — github.com/Leonxlnx/taste-skill @12af471 (MIT)
 - impeccable — github.com/pbakaus/impeccable @5e745ac (Apache-2.0). Edit hooks NOT enabled (token cost).
 - ui-ux-pro-max — github.com/nextlevelbuilder/ui-ux-pro-max-skill @28b3b8d (MIT), core skill only.
+- ponytail, ponytail-review, ponytail-audit, ponytail-help — github.com/DietrichGebert/ponytail @96608e0 (MIT). Hooks/ledger NOT enabled.
+- hallmark — github.com/Nutlope/hallmark @8f6969f (MIT). Image gen off (needs TOGETHER_API_KEY).
+- humanizer — github.com/blader/humanizer @0ef9fe5 (MIT), SKILL.md only.
+- diagram-design — github.com/cathrynlavery/diagram-design @0cf73c3 (MIT).
+- Node-only extras (taste lint/inspect, hallmark sloplint/theme draw) are inactive until Node is installed.

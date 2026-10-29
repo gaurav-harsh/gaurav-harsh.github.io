@@ -3,7 +3,7 @@
 Updated: 2026-10-29
 
 ## Status
-- Project scaffolded: CLAUDE.md, skills installed in `.claude/skills/`, Git + GitHub CLI ready (account: gaurav-harsh).
+- Project scaffolded: CLAUDE.md, 10 skills in `.claude/skills/` (taste, impeccable, ui-ux-pro-max, ponytail×4, hallmark, humanizer, diagram-design), Git + GitHub CLI ready (account: gaurav-harsh).
 - No site code yet. No content collected yet.
 
 ## Next 3 steps
