@@ -1,0 +1,141 @@
+<svg width="1440" height="2146" viewBox="0 0 1440 2146" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<title>AI-native UX research workflow</title>
+<rect x="0" y="0" width="1440" height="2146" fill="#FFFFFF"/>
+<text x="40" y="82" font-size="34" font-weight="700" fill="#1A1A18">AI-native UX research workflow</text>
+<text x="40" y="112" font-size="16" fill="#5F5E5A">The skill pipeline behind every study, from requirements to readout</text>
+<line x1="40" y1="138" x2="1400" y2="138" stroke="#E5E3DA" stroke-width="1"/>
+<line x1="76" y1="322.0" x2="76" y2="1712.0" stroke="#E5E3DA" stroke-width="2"/>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#B4B2A9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+<!-- STEP 01 -->
+<circle cx="76" cy="322.0" r="17" fill="#FFFFFF" stroke="#0F6E56" stroke-width="2.5"/>
+<text x="76" y="322.0" font-size="15" font-weight="700" fill="#0F6E56" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="130" y="198.0" width="1270" height="248.0" rx="16" fill="#FAF9F5" stroke="#E5E3DA" stroke-width="1"/>
+<rect x="130" y="198.0" width="6" height="248.0" rx="3" fill="#0F6E56"/>
+<text x="164" y="236.0" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0F6E56">STEP 01</text>
+<text x="164" y="264.0" font-size="21" font-weight="700" fill="#1A1A18">Plan &amp; scope</text>
+<text x="164" y="292.0" font-size="14" fill="#5F5E5A">Meeting notes into research requirements,</text>
+<text x="164" y="312.0" font-size="14" fill="#5F5E5A">secondary research, and a research plan</text>
+<text x="490" y="234.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">TOOLS</text>
+<g transform="translate(0,250.0)"><rect x="490.0" y="0.0" width="99" height="22" rx="11" fill="#CFEFE0"/><text x="539.5" y="11.0" font-size="13" fill="#085041" text-anchor="middle" dominant-baseline="middle">Claude Code</text></g>
+<text x="490" y="304.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">MCP CONNECTORS</text>
+<g transform="translate(0,320.0)"><rect x="490.0" y="0.0" width="220" height="22" rx="11" fill="#CFEFE0"/><text x="600.0" y="11.0" font-size="13" fill="#085041" text-anchor="middle" dominant-baseline="middle">Org-approved MCP integrations</text></g>
+<text x="490" y="374.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">SKILL FILE</text>
+<g transform="translate(0,390.0)" font-family="DejaVu Sans Mono, monospace" font-size="13" fill="#F1EFE8">
+<rect x="490.0" y="0.0" width="220" height="22" rx="11" fill="#232320"/><text x="600.0" y="11.0" text-anchor="middle" dominant-baseline="middle">requirements-from-notes.md</text>
+<rect x="720.0" y="0.0" width="243" height="22" rx="11" fill="#232320"/><text x="841.5" y="11.0" text-anchor="middle" dominant-baseline="middle">secondary-research-analyst.md</text>
+<rect x="973.0" y="0.0" width="220" height="22" rx="11" fill="#232320"/><text x="1083.0" y="11.0" text-anchor="middle" dominant-baseline="middle">research-plan-generator.md</text>
+</g>
+<line x1="76" y1="340.0" x2="76" y2="582.0" stroke="#E5E3DA" stroke-width="2" marker-end="url(#arr)"/>
+
+<!-- STEP 02 -->
+<circle cx="76" cy="600.0" r="17" fill="#FFFFFF" stroke="#0F6E56" stroke-width="2.5"/>
+<text x="76" y="600.0" font-size="15" font-weight="700" fill="#0F6E56" text-anchor="middle" dominant-baseline="middle">2</text>
+<rect x="130" y="476.0" width="1270" height="248.0" rx="16" fill="#FAF9F5" stroke="#E5E3DA" stroke-width="1"/>
+<rect x="130" y="476.0" width="6" height="248.0" rx="3" fill="#0F6E56"/>
+<text x="164" y="514.0" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0F6E56">STEP 02</text>
+<text x="164" y="542.0" font-size="21" font-weight="700" fill="#1A1A18">Design instruments</text>
+<text x="164" y="570.0" font-size="14" fill="#5F5E5A">Discussion guide and screener generation,</text>
+<text x="164" y="590.0" font-size="14" fill="#5F5E5A">audited for bias before fielding</text>
+<text x="490" y="512.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">TOOLS</text>
+<g transform="translate(0,528.0)"><rect x="490.0" y="0.0" width="99" height="22" rx="11" fill="#CFEFE0"/><text x="539.5" y="11.0" font-size="13" fill="#085041" text-anchor="middle" dominant-baseline="middle">Claude Code</text></g>
+<text x="490" y="582.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">MCP CONNECTORS</text>
+<g transform="translate(0,598.0)"><rect x="490.0" y="0.0" width="220" height="22" rx="11" fill="#CFEFE0"/><text x="600.0" y="11.0" font-size="13" fill="#085041" text-anchor="middle" dominant-baseline="middle">Org-approved MCP integrations</text></g>
+<text x="490" y="652.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">SKILL FILE</text>
+<g transform="translate(0,668.0)" font-family="DejaVu Sans Mono, monospace" font-size="13" fill="#F1EFE8">
+<rect x="490.0" y="0.0" width="243" height="22" rx="11" fill="#232320"/><text x="611.5" y="11.0" text-anchor="middle" dominant-baseline="middle">discussion-guide-generator.md</text>
+<rect x="743.0" y="0.0" width="180" height="22" rx="11" fill="#232320"/><text x="833.0" y="11.0" text-anchor="middle" dominant-baseline="middle">screener-generator.md</text>
+<rect x="933.0" y="0.0" width="180" height="22" rx="11" fill="#232320"/><text x="1023.0" y="11.0" text-anchor="middle" dominant-baseline="middle">bias-check-auditor.md</text>
+</g>
+<line x1="76" y1="618.0" x2="76" y2="860.0" stroke="#E5E3DA" stroke-width="2" marker-end="url(#arr)"/>
+
+<!-- STEP 03 -->
+<circle cx="76" cy="878.0" r="17" fill="#FFFFFF" stroke="#0F6E56" stroke-width="2.5"/>
+<text x="76" y="878.0" font-size="15" font-weight="700" fill="#0F6E56" text-anchor="middle" dominant-baseline="middle">3</text>
+<rect x="130" y="754.0" width="1270" height="248.0" rx="16" fill="#FAF9F5" stroke="#E5E3DA" stroke-width="1"/>
+<rect x="130" y="754.0" width="6" height="248.0" rx="3" fill="#0F6E56"/>
+<text x="164" y="792.0" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0F6E56">STEP 03</text>
+<text x="164" y="820.0" font-size="21" font-weight="700" fill="#1A1A18">Moderate &amp; capture</text>
+<text x="164" y="848.0" font-size="14" fill="#5F5E5A">Live interviews, moderation support, and</text>
+<text x="164" y="868.0" font-size="14" fill="#5F5E5A">transcript capture</text>
+<text x="490" y="790.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">TOOLS</text>
+<g transform="translate(0,806.0)"><rect x="490.0" y="0.0" width="99" height="22" rx="11" fill="#CFEFE0"/><text x="539.5" y="11.0" font-size="13" fill="#085041" text-anchor="middle" dominant-baseline="middle">Claude Code</text></g>
+<text x="490" y="860.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">MCP CONNECTORS</text>
+<g transform="translate(0,876.0)"><rect x="490.0" y="0.0" width="220" height="22" rx="11" fill="#CFEFE0"/><text x="600.0" y="11.0" font-size="13" fill="#085041" text-anchor="middle" dominant-baseline="middle">Org-approved MCP integrations</text></g>
+<text x="490" y="930.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">SKILL FILE</text>
+<g transform="translate(0,946.0)" font-family="DejaVu Sans Mono, monospace" font-size="13" fill="#F1EFE8">
+<rect x="490.0" y="0.0" width="180" height="22" rx="11" fill="#232320"/><text x="580.0" y="11.0" text-anchor="middle" dominant-baseline="middle">moderation-support.md</text>
+</g>
+<line x1="76" y1="896.0" x2="76" y2="1138.0" stroke="#E5E3DA" stroke-width="2" marker-end="url(#arr)"/>
+
+<!-- STEP 04 -->
+<circle cx="76" cy="1156.0" r="17" fill="#FFFFFF" stroke="#0F6E56" stroke-width="2.5"/>
+<text x="76" y="1156.0" font-size="15" font-weight="700" fill="#0F6E56" text-anchor="middle" dominant-baseline="middle">4</text>
+<rect x="130" y="1032.0" width="1270" height="248.0" rx="16" fill="#FAF9F5" stroke="#E5E3DA" stroke-width="1"/>
+<rect x="130" y="1032.0" width="6" height="248.0" rx="3" fill="#0F6E56"/>
+<text x="164" y="1070.0" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0F6E56">STEP 04</text>
+<text x="164" y="1098.0" font-size="21" font-weight="700" fill="#1A1A18">Synthesize</text>
+<text x="164" y="1126.0" font-size="14" fill="#5F5E5A">Coding, affinity mapping, thematic analysis,</text>
+<text x="164" y="1146.0" font-size="14" fill="#5F5E5A">and insight generation</text>
+<text x="490" y="1068.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">TOOLS</text>
+<g transform="translate(0,1084.0)"><rect x="490.0" y="0.0" width="99" height="22" rx="11" fill="#CFEFE0"/><text x="539.5" y="11.0" font-size="13" fill="#085041" text-anchor="middle" dominant-baseline="middle">Claude Code</text></g>
+<text x="490" y="1138.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">MCP CONNECTORS</text>
+<g transform="translate(0,1154.0)"><rect x="490.0" y="0.0" width="220" height="22" rx="11" fill="#CFEFE0"/><text x="600.0" y="11.0" font-size="13" fill="#085041" text-anchor="middle" dominant-baseline="middle">Org-approved MCP integrations</text></g>
+<text x="490" y="1208.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">SKILL FILE</text>
+<g transform="translate(0,1224.0)" font-family="DejaVu Sans Mono, monospace" font-size="13" fill="#F1EFE8">
+<rect x="490.0" y="0.0" width="212" height="22" rx="11" fill="#232320"/><text x="596.0" y="11.0" text-anchor="middle" dominant-baseline="middle">coding-affinity-engine.md</text>
+<rect x="712.0" y="0.0" width="180" height="22" rx="11" fill="#232320"/><text x="802.0" y="11.0" text-anchor="middle" dominant-baseline="middle">thematic-synthesis.md</text>
+<rect x="902.0" y="0.0" width="173" height="22" rx="11" fill="#232320"/><text x="988.5" y="11.0" text-anchor="middle" dominant-baseline="middle">insight-generator.md</text>
+</g>
+<line x1="76" y1="1174.0" x2="76" y2="1416.0" stroke="#E5E3DA" stroke-width="2" marker-end="url(#arr)"/>
+
+<!-- STEP 05 -->
+<circle cx="76" cy="1434.0" r="17" fill="#FFFFFF" stroke="#0F6E56" stroke-width="2.5"/>
+<text x="76" y="1434.0" font-size="15" font-weight="700" fill="#0F6E56" text-anchor="middle" dominant-baseline="middle">5</text>
+<rect x="130" y="1310.0" width="1270" height="248.0" rx="16" fill="#FAF9F5" stroke="#E5E3DA" stroke-width="1"/>
+<rect x="130" y="1310.0" width="6" height="248.0" rx="3" fill="#0F6E56"/>
+<text x="164" y="1348.0" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0F6E56">STEP 05</text>
+<text x="164" y="1376.0" font-size="21" font-weight="700" fill="#1A1A18">Audit &amp; validate</text>
+<text x="164" y="1404.0" font-size="14" fill="#5F5E5A">Every output checked for factual accuracy,</text>
+<text x="164" y="1424.0" font-size="14" fill="#5F5E5A">hallucination, and evidence traceability</text>
+<text x="490" y="1346.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">TOOLS</text>
+<g transform="translate(0,1362.0)"><rect x="490.0" y="0.0" width="99" height="22" rx="11" fill="#CFEFE0"/><text x="539.5" y="11.0" font-size="13" fill="#085041" text-anchor="middle" dominant-baseline="middle">Claude Code</text></g>
+<text x="490" y="1416.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">MCP CONNECTORS</text>
+<g transform="translate(0,1432.0)"><rect x="490.0" y="0.0" width="220" height="22" rx="11" fill="#CFEFE0"/><text x="600.0" y="11.0" font-size="13" fill="#085041" text-anchor="middle" dominant-baseline="middle">Org-approved MCP integrations</text></g>
+<text x="490" y="1486.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">SKILL FILE</text>
+<g transform="translate(0,1502.0)" font-family="DejaVu Sans Mono, monospace" font-size="13" fill="#F1EFE8">
+<rect x="490.0" y="0.0" width="180" height="22" rx="11" fill="#232320" stroke="#0F6E56" stroke-width="1.5"/><text x="580.0" y="11.0" text-anchor="middle" dominant-baseline="middle">output-audit-skill.md</text>
+</g>
+<line x1="76" y1="1452.0" x2="76" y2="1694.0" stroke="#E5E3DA" stroke-width="2" marker-end="url(#arr)"/>
+
+<!-- STEP 06 -->
+<circle cx="76" cy="1712.0" r="17" fill="#FFFFFF" stroke="#0F6E56" stroke-width="2.5"/>
+<text x="76" y="1712.0" font-size="15" font-weight="700" fill="#0F6E56" text-anchor="middle" dominant-baseline="middle">6</text>
+<rect x="130" y="1588.0" width="1270" height="248.0" rx="16" fill="#FAF9F5" stroke="#E5E3DA" stroke-width="1"/>
+<rect x="130" y="1588.0" width="6" height="248.0" rx="3" fill="#0F6E56"/>
+<text x="164" y="1626.0" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0F6E56">STEP 06</text>
+<text x="164" y="1654.0" font-size="21" font-weight="700" fill="#1A1A18">Present &amp; deliver</text>
+<text x="164" y="1682.0" font-size="14" fill="#5F5E5A">Presentation outline and readout deck,</text>
+<text x="164" y="1702.0" font-size="14" fill="#5F5E5A">drafted and refined for stakeholders</text>
+<text x="490" y="1624.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">TOOLS</text>
+<g transform="translate(0,1640.0)"><rect x="490.0" y="0.0" width="99" height="22" rx="11" fill="#CFEFE0"/><text x="539.5" y="11.0" font-size="13" fill="#085041" text-anchor="middle" dominant-baseline="middle">Claude Code</text></g>
+<text x="490" y="1694.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">MCP CONNECTORS</text>
+<g transform="translate(0,1710.0)"><rect x="490.0" y="0.0" width="220" height="22" rx="11" fill="#CFEFE0"/><text x="600.0" y="11.0" font-size="13" fill="#085041" text-anchor="middle" dominant-baseline="middle">Org-approved MCP integrations</text></g>
+<text x="490" y="1764.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">SKILL FILE</text>
+<g transform="translate(0,1780.0)" font-family="DejaVu Sans Mono, monospace" font-size="13" fill="#F1EFE8">
+<rect x="490.0" y="0.0" width="274" height="22" rx="11" fill="#232320"/><text x="627.0" y="11.0" text-anchor="middle" dominant-baseline="middle">presentation-outline-generator.md</text>
+<rect x="774.0" y="0.0" width="180" height="22" rx="11" fill="#232320"/><text x="864.0" y="11.0" text-anchor="middle" dominant-baseline="middle">deck-draft-builder.md</text>
+</g>
+
+<!-- SHARED INFRASTRUCTURE -->
+<rect x="40" y="1856.0" width="1360" height="250" rx="16" fill="#1A1A18"/>
+<text x="74" y="1898.0" font-size="20" font-weight="700" fill="#FFFFFF">Shared AI infrastructure</text>
+<text x="74" y="1922.0" font-size="14" fill="#C2C0B6">The connectors and skill files underneath every stage above</text>
+<text x="74" y="1952.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">MCP CONNECTORS</text>
+<g transform="translate(0,1964.0)"><rect x="74.0" y="0.0" width="220" height="22" rx="11" fill="#3C3B37"/><text x="184.0" y="11.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#F1EFE8" text-anchor="middle" dominant-baseline="middle">Org-approved MCP integrations</text></g>
+<text x="74" y="2020.0" font-size="11" font-weight="700" letter-spacing="1.2" fill="#8A8880">SKILL LIBRARY</text>
+<g transform="translate(0,2032.0)">
+<rect x="74.0" y="0.0" width="415" height="22" rx="11" fill="#232320"/><text x="281.5" y="11.0" font-family="DejaVu Sans Mono, monospace" font-size="13" fill="#F1EFE8" text-anchor="middle" dominant-baseline="middle">13 custom SKILL.md files, reused across every study</text>
+<rect x="499.0" y="0.0" width="337" height="22" rx="11" fill="#232320" stroke="#0F6E56" stroke-width="1.5"/><text x="667.5" y="11.0" font-family="DejaVu Sans Mono, monospace" font-size="13" fill="#CFEFE0" text-anchor="middle" dominant-baseline="middle">2 dedicated QC skills: bias-check + audit</text>
+</g>
+</svg>

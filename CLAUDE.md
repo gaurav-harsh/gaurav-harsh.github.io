@@ -1,49 +1,50 @@
 # Gaurav Portfolio — UX Design & UX Research
 
-## Goal
-Free GitHub Pages portfolio that gets Gaurav shortlisted for UX Designer / UX Researcher roles at MNCs.
+Free GitHub Pages portfolio to get shortlisted for UX Designer / UX Researcher roles at MNCs.
+**Reader:** senior UX hiring managers (10+ yrs). Skim <2 min, distrust fluff and template looks, want
+problem → method → evidence → decision → measurable outcome. Show research rigor, not only visuals.
 
-## Primary user
-Senior UX hiring managers (10+ yrs). They skim in under 2 minutes, distrust fluff and template looks,
-and want: problem → method → evidence → decision → measurable outcome. Show research rigor, not only visuals.
+## Stack (fixed)
+Plain HTML + CSS + minimal vanilla JS, no build/npm. GitHub Pages from `main` root (`.nojekyll`).
+`index.html`, `work/<slug>.html`, `assets/{css,js,img}/`. WCAG 2.2 AA. Images ≤200KB, lazy, WebP/optimized SVG.
 
-## Stack (keep it this way unless told otherwise)
-- Plain HTML + CSS + minimal vanilla JS. No framework, no build step, no npm.
-- Hosted on GitHub Pages from `main` branch, repo root. Add `.nojekyll`.
-- Structure: `index.html`, `work/<case-study>.html`, `assets/{css,js,img}/`.
-- Accessibility target: WCAG 2.2 AA. Performance: fast on mobile, images ≤200KB, lazy-loaded.
+## Shared memory (read these, not the repo)
+- `docs/STATE.md` — status + next steps. Read first every session.
+- `content/<nn-slug>/index.md` — the only source of copy and facts. Never invent claims or metrics.
+- `PRODUCT.md` — audience, goals, voice (Impeccable format). `DESIGN.md` — direction, tokens, type, motion rules.
+- `assets/css/tokens.css` — the only place colors/type/spacing values live.
+Every skill reads and writes these; none keeps its own copy (no ui-ux-pro-max `--persist`, no second style guide).
 
-## Skill routing (use ONE per job — don't stack them)
-- Art direction / building a page → `design-taste-frontend` (default builder)
-- `hallmark` → ONLY when the user names it (alternate builder / `audit` second opinion). Never run with taste on the same page.
-- Critique, audit, polish, a11y/UX review → `impeccable` (e.g. `/impeccable critique`, `audit`, `polish`)
-- Look up palettes, font pairs, UX rules → `ui-ux-pro-max` via its `search.py` script (cheap; prefer over reading data files)
-- Any code writing → follow `ponytail` (smallest change, native HTML/CSS first). `/ponytail-review` before commits.
-- Case-study prose, bio, any visible text → write, then pass through `humanizer`. `design:ux-copy` for CTAs/microcopy.
-- Scroll storytelling (case-study reveals, pinned steps) → `scroll-craft` ONLY when asked; keep motion subtle, content readable without it, honour reduced-motion. Never use kie.ai generation.
-- Research artifacts (journey maps, flows, timelines, 2x2s, affinity/process diagrams) → `diagram-design` (static HTML/SVG)
-- Accessibility pass → `design:accessibility-review`
-- Visual check → built-in browser on a local file or `python3 -m http.server`
+## Auto pipeline — invoke skills yourself (Skill tool) when the trigger matches; don't wait to be asked
+| Trigger | Skill | Output |
+|---|---|---|
+| `PRODUCT.md` missing, before any UI work | `impeccable` → `init` (fill from this file + content/, ask only gaps) | PRODUCT.md |
+| `DESIGN.md` missing, before first page | `design-taste-frontend` (direction), palette/font lookups via `python3 .claude/skills/ui-ux-pro-max/scripts/search.py "<q>" --domain <d>` | DESIGN.md + tokens.css |
+| Writing/editing any HTML/CSS/JS | `ponytail` rules + `design-taste-frontend` house rules, following DESIGN.md | page |
+| Research artifact (journey map, flow, 2×2, timeline, framework) | `diagram-design`, styled from tokens.css (first run: choose "local design-system") | inline SVG/HTML |
+| Case-study scroll storytelling | `scroll-craft` — subtle, content-first, works with motion off, honours reduced-motion. No kie.ai | page section |
+| Any visitor-facing prose written or rewritten | `humanizer` on that text only | copy |
+| Page done (before commit) | `impeccable` → `critique` (or `audit`) on that file only; fix P0/P1 | fixes |
+| Before every commit with code | `ponytail-review` on the diff | fixes |
+| Before sharing the site | `ponytail-audit`, `design:accessibility-review` | report + fixes |
+Manual only (never auto): `hallmark`, `ponytail-help`.
 
 ## Token rules
-- Read `docs/STATE.md` first; don't re-explore the repo.
-- Read files by line range; never read whole skill folders or `data/` CSVs.
-- Never read or edit `.claude/skills/**` unless debugging a skill.
-- Run skill scripts from the project root with relative paths (`python3 .claude/skills/...`) so allow rules match.
-- Short replies. No recaps of unchanged code.
+- Load each skill once per session; reuse its rules after. Never re-run a stage whose output file exists — read the file.
+- One builder per page (taste). Don't run two skills for the same job.
+- Read skill references by section, only when the skill points there. Never read `.claude/skills/**` data/CSV or whole folders.
+- Skill scripts: run from project root with relative paths (`python3 .claude/skills/...`) so allow rules match.
+- Reviews target changed files only. No subagents unless the user asks.
+- Short replies; no recaps of unchanged code.
 
-## Memory routine
-- After each finished task (or when asked `/save`): overwrite `docs/STATE.md` (≤40 lines: current status, next 3 steps, open questions).
-- Log lasting decisions as one line each in `docs/DECISIONS.md` (append; date + decision + why).
-- Personal content (bio, projects, metrics) lives in `content/` — the single source of truth.
+## Memory routine (automatic)
+After each finished task: overwrite `docs/STATE.md` (≤40 lines: status, next 3 steps, open questions);
+append lasting decisions to `docs/DECISIONS.md` (`- date — decision — why`). `/save` does the same on demand.
 
 ## Vendored skills (gitignored; reinstall from source if missing)
-- design-taste-frontend — github.com/Leonxlnx/taste-skill @12af471 (MIT)
-- impeccable — github.com/pbakaus/impeccable @5e745ac (Apache-2.0). Edit hooks NOT enabled (token cost).
-- ui-ux-pro-max — github.com/nextlevelbuilder/ui-ux-pro-max-skill @28b3b8d (MIT), core skill only.
-- ponytail, ponytail-review, ponytail-audit, ponytail-help — github.com/DietrichGebert/ponytail @96608e0 (MIT). Hooks/ledger NOT enabled.
-- hallmark — github.com/Nutlope/hallmark @8f6969f (MIT). Image gen off (needs TOGETHER_API_KEY).
-- humanizer — github.com/blader/humanizer @0ef9fe5 (MIT), SKILL.md only.
-- diagram-design — github.com/cathrynlavery/diagram-design @0cf73c3 (MIT).
-- scroll-craft — github.com/nateherkai/scroll-craft @75d81f7 (MIT). kie.ai image/video gen not used.
-- Node-only extras (taste lint/inspect, hallmark sloplint/theme draw) are inactive until Node is installed.
+taste github.com/Leonxlnx/taste-skill@12af471 · impeccable pbakaus/impeccable@5e745ac (hooks off) ·
+ui-ux-pro-max nextlevelbuilder/ui-ux-pro-max-skill@28b3b8d (core only, paths patched) ·
+ponytail(+review,audit,help) DietrichGebert/ponytail@96608e0 (hooks off) · hallmark Nutlope/hallmark@8f6969f ·
+humanizer blader/humanizer@0ef9fe5 · diagram-design cathrynlavery/diagram-design@0cf73c3 ·
+scroll-craft nateherkai/scroll-craft@75d81f7. Local edits: `disable-model-invocation: true` on hallmark, ponytail-help.
+Node-only checkers (taste lint/inspect, scroll-craft, hallmark) inactive until Node is installed.
