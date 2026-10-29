@@ -28,6 +28,6 @@ note: This case study is image-only in Notion. All story text lives inside the i
 
 ## Key User flow (creating obligor's financial model)
 
-> Embedded external object here could not be imported by the connector (likely a Figma/FigJam embed). Add its link manually.
+Figma prototype (user flow): https://www.figma.com/proto/c723b2P3UKGEt2lspZ86jK/Untitled?node-id=301-19423&t=OU0Y5YLUlI3nLuZV-1&scaling=scale-down&content-scaling=fixed&page-id=301%3A17947&starting-point-node-id=301%3A19423
 
 ![](images/10-Part_11.svg)

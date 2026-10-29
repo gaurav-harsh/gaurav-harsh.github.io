@@ -13,3 +13,10 @@
 .claude/settings.local.json
 .taste-skill/
 .impeccable/
+# private working notes & config (kept local, not public)
+CLAUDE.md
+docs/
+.claude/
+PRODUCT.md
+DESIGN.md
+content/00-profile/cv/*.docx

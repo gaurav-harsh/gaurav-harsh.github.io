@@ -14,8 +14,9 @@ Source of truth for site copy. Raw import — not yet edited for the website.
 | 07-aarogya-setu | Aarogya Setu UX research | yes | 6 |
 
 ## Gaps to fill
-- 00-profile: 4 link blocks at bottom of Notion page unreadable (LinkedIn / resume?). Add links. Phone number intentionally removed (not published).
+- CV PDF for download (export without phone). Text version: 00-profile/cv/resume.md.
 - 02, 05: story text is baked into images → transcribe to real text (a11y, skimmability, SEO).
-- 02: embedded user-flow (likely Figma) not imported → add link.
-- No CV PDF yet.
 - Images are raw (51 MB total, some 2–4 MB SVGs) → optimize before use on the site.
+
+## Decided
+- All 7 case studies go on the site.

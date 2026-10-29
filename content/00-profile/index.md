@@ -49,7 +49,6 @@ Feel free to contact me with any questions or opportunities to collaborate. I lo
 ## Contact
 
 - Email: gauravharsh.design@gmail.com
-
-## Not imported
-
-- 4 blocks at the bottom of the Notion page could not be read by the connector (likely link buttons/embeds, e.g. LinkedIn or resume). Please add those links manually.
+- LinkedIn: https://www.linkedin.com/in/gharsh22/
+- CV: `cv/resume.md` (text). Public PDF still needed, without phone.
+- Phone: never publish.
