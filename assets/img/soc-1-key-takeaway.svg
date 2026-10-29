@@ -1,0 +1,36 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<title>Adoption and trust are two different metrics</title>
+<rect x="0" y="0" width="1200" height="520" fill="#FFFFFF"/>
+<text x="40" y="50" font-size="28" font-weight="700" fill="#1A1A18">Adoption and trust are two different metrics</text>
+<text x="40" y="82" font-size="15" fill="#5F5E5A">AI adoption is normalized industry-wide, but confidence in AI-generated conclusions remains low</text>
+<text x="40" y="104" font-size="15" fill="#5F5E5A">&#8212; 6 of 6 participants in this study; 9% &#8220;very confident&#8221; industry-wide.</text>
+<text x="40" y="124" font-size="12" font-style="italic" fill="#8A8880">Source: Pulse of AI SOC Report, Cybersecurity Insiders</text>
+<line x1="40" y1="146" x2="1160" y2="146" stroke="#E5E3DA" stroke-width="1"/>
+<text x="40" y="180" font-size="18" font-weight="700" fill="#0F6E56">You can&#8217;t optimize for speed and evidence-gated trust on the same alert</text>
+<rect x="40" y="204" width="357" height="176" rx="14" fill="#FAF9F5" stroke="#E5E3DA" stroke-width="1"/>
+<text x="64" y="236" font-size="16" font-weight="700" fill="#1A1A18">Known-bad, pre-labeled</text>
+<text x="64" y="256" font-size="16" font-weight="700" fill="#1A1A18">incidents</text>
+<rect x="64" y="273" width="70" height="18" rx="9" fill="#CFEFE0"/><text x="99" y="282" font-size="11" font-weight="700" fill="#085041" text-anchor="middle" dominant-baseline="middle">FASTEST</text>
+<text x="64" y="322" font-size="13" fill="#5F5E5A">Automatable now &#8212; if</text>
+<text x="64" y="340" font-size="13" fill="#5F5E5A">documentation is used as</text>
+<text x="64" y="358" font-size="13" fill="#5F5E5A">training data</text>
+<rect x="421" y="204" width="357" height="176" rx="14" fill="#FAF9F5" stroke="#E5E3DA" stroke-width="1"/>
+<text x="445" y="236" font-size="16" font-weight="700" fill="#1A1A18">Correlated, ambiguous</text>
+<text x="445" y="256" font-size="16" font-weight="700" fill="#1A1A18">incidents</text>
+<rect x="445" y="273" width="131" height="18" rx="9" fill="#FAEEDA"/><text x="510.5" y="282" font-size="11" font-weight="700" fill="#854F0B" text-anchor="middle" dominant-baseline="middle">FASTER, NOT FAST</text>
+<text x="445" y="322" font-size="13" fill="#5F5E5A">Speed depends on tooling</text>
+<text x="445" y="340" font-size="13" fill="#5F5E5A">(timeline, escalation</text>
+<text x="445" y="358" font-size="13" fill="#5F5E5A">reasoning) &#8212; not trust</text>
+<rect x="802" y="204" width="358" height="176" rx="14" fill="#FAF9F5" stroke="#E5E3DA" stroke-width="1"/>
+<text x="826" y="236" font-size="16" font-weight="700" fill="#1A1A18">Novel, contested</text>
+<text x="826" y="256" font-size="16" font-weight="700" fill="#1A1A18">incidents</text>
+<rect x="826" y="273" width="193" height="18" rx="9" fill="#F5C4B3"/><text x="922.5" y="282" font-size="11" font-weight="700" fill="#712B13" text-anchor="middle" dominant-baseline="middle">NOT OPTIMIZING FOR SPEED</text>
+<text x="826" y="322" font-size="13" fill="#5F5E5A">Investigation-driven. Safety</text>
+<text x="826" y="340" font-size="13" fill="#5F5E5A">over speed is the right</text>
+<text x="826" y="358" font-size="13" fill="#5F5E5A">trade here</text>
+<rect x="40" y="408" width="1120" height="90" rx="12" fill="#FAF9F5" stroke="#E5E3DA" stroke-width="1"/>
+<rect x="40" y="408" width="5" height="90" fill="#0F6E56"/>
+<text x="66" y="440" font-size="15" font-style="italic" fill="#444441">&#8220;I would be much more comfortable if it showed me the evidence behind its</text>
+<text x="66" y="462" font-size="15" font-style="italic" fill="#444441">conclusion&#8230;linked back to the supporting telemetry.&#8221;</text>
+<text x="66" y="486" font-size="12" fill="#8A8880">&#8212; Tier-2 SOC analyst, study participant</text>
+</svg>

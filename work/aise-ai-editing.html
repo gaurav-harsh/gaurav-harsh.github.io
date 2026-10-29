@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AiSE, AI-enabled editing — Gaurav Harsh</title>
+<meta name="description" content="From a subject-expert brief to a live AI editing product in two months: research, product form and design for a Word plugin.">
+<meta name="theme-color" content="#0a0d14">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=erode@400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/case.css">
+<script>document.documentElement.className="";</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="mark" href="../">Gaurav Harsh</a>
+  <nav aria-label="Primary"><a href="../#work">Work</a><a href="../#about">About</a></nav>
+  <a class="mail" href="mailto:gauravharsh.design@gmail.com">Email</a>
+</header>
+
+<main id="main">
+<header class="cs-head">
+  <h1 class="rv">AiSE, AI-enabled editing</h1>
+  <dl><div><dt>Role</dt><dd>UX researcher and designer: desirability research lead, sole designer across all three personas</dd></div><div><dt>Product</dt><dd>AiSE, a workflow inside Acuity Assistant (Word plugin)</dd></div><div><dt>Timeline</dt><dd>2 months: research to proof of concept in month 1, development in month 2</dd></div><div><dt>Team</dt><dd>UX research and design, market researcher, business analyst, product owner, developers</dd></div><div><dt>Status</dt><dd>Live, with active users</dd></div></dl>
+  <p class="lede">Research reframed the brief from a grammar tool to a compliance-aware editing layer. Design removed the adoption risk before a screen was drawn.</p>
+</header>
+
+<section class="cs-sec" aria-labelledby="s0">
+  <h2 id="s0" class="rv">The brief that wasn't a brief</h2>
+  <div class="cs-body rv">
+    <figure class="fig rv"><img src="../assets/img/aise-frame-1171278137.jpg" width="1400" height="778" loading="lazy" alt="Slide showing the DVF evaluation pod: desirability, viability and feasibility arms, with a one-month timeline from research to proof of concept."><figcaption><a href="../assets/img/aise-frame-1171278137.jpg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <p>I led the Desirability arm of the DVF evaluation: hypothesis testing, primary research and synthesis. The expert brief was a seed, not a specification. It gave domain grounding, but from one person's vantage point. My job was to test how far it held with people who do the work daily.</p>
+    <p>One hard constraint: research to proof of concept in a month, with development starting in month two. There was no room for iterative exploratory rounds.</p>
+  </div>
+</section>
+
+<section class="cs-sec" aria-labelledby="s1">
+  <h2 id="s1" class="rv">Understanding the work before designing for it</h2>
+  <div class="cs-body rv">
+    <p><strong>Finding 1: AI is already used, but not trusted to act alone.</strong> 8 to 10 of 12 participants, in both cohorts. ChatGPT and Gemini were in informal use, but everyone who mentioned AI also named oversight as a requirement. This was domain caution, not resistance: financial research carries regulatory risk.</p>
+    <p><strong>Finding 2: a plugin, not a standalone tool.</strong> 9 or more of 12 participants wanted it inside Microsoft Word. A new tab, login or interface would add friction.</p>
+    <p class="pull">Users weren't asking AI to replace editorial judgment. They wanted it to handle the repeatable, rule-based checks so their attention could go to decisions that need domain expertise.</p>
+    <figure class="fig rv"><img src="../assets/img/aise-research-programme-v2-1.jpg" width="1400" height="1341" loading="lazy" alt="The research programme: two participant cohorts, interview themes and how findings fed the feature priorities."><figcaption><a href="../assets/img/aise-research-programme-v2-1.jpg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <h3>Core interview questions</h3>
+    <ul><li>How do editing requests arrive, and how do you track them?</li><li>Where does time get lost in the editing workflow?</li><li>What tools do you already use, including AI tools?</li><li>What would make a purpose-built editing tool credible enough to trust?</li></ul>
+    <figure class="fig rv"><img src="../assets/img/aise-frame-1171278160.jpg" width="1400" height="761" loading="lazy" alt="Feature priorities. Must have: style and grammar, data consistency, regulatory flagging. Should have: custom style guides, sentence rephrasing. Phase 2: platform integration, report writing assist, plagiarism detection."><figcaption><a href="../assets/img/aise-frame-1171278160.jpg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <p>Custom style guides rated lower, as expected at the configuration layer rather than the user's. Sentence rephrasing and platform integration rated high but were Phase 2.</p>
+    <p><strong>A gap I name plainly:</strong> no quality baseline existed. Users judged editing quality through review cycles, not metrics, so a before-and-after benchmark was impossible. The 40%+ turnaround reduction is a projection until post-launch data can validate it.</p>
+    <p><strong>Method:</strong> themes were built bottom-up by affinity mapping, then checked by rereading source transcripts. AI tools helped collate and paraphrase during reporting only, and every AI-assisted output was checked against transcripts before findings were carried forward.</p>
+  </div>
+</section>
+
+<section class="cs-sec" aria-labelledby="s2">
+  <h2 id="s2" class="rv">The strategic problem nobody had named</h2>
+  <div class="cs-body rv">
+    <p>The research confirmed the operational pain and showed a structural gap. Every competitor had drawn the same boundary, and it was the wrong one. Regulatory checks and data validation happened outside any tool: manual, judgment-dependent and caught late. Several participants described data inconsistencies across charts and tables found after a document had already moved on.</p>
+    <figure class="fig rv"><img src="../assets/img/aise-frame-1171278168.jpg" width="1400" height="883" loading="lazy" alt="Competitive feature matrix comparing tools on editing, data validation, regulatory flagging and related capabilities."><figcaption><a href="../assets/img/aise-frame-1171278168.jpg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <p>One limit: the competitive analysis was desk research, not hands-on testing. The matrix shows the market ceiling, not how tools perform in financial editing, or how close any competitor is to shipping its roadmap. The whitespace conclusion is sound but needs monitoring.</p>
+  </div>
+</section>
+
+<section class="cs-sec" aria-labelledby="s3">
+  <h2 id="s3" class="rv">Finding a home: the product form problem</h2>
+  <div class="cs-body rv">
+    <figure class="fig rv"><img src="../assets/img/aise-product-form-s4-1.jpg" width="1400" height="717" loading="lazy" alt="Options considered for the product form, ending with AiSE embedded inside Acuity Assistant."><figcaption><a href="../assets/img/aise-product-form-s4-1.jpg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <p>Before a screen could be designed there was a problem that had nothing to do with UI: AiSE couldn't exist as a standalone product.</p>
+    <p>Embedding it inside Acuity Assistant solved adoption before design started. Infrastructure and trust already existed, so clients would reach it as an extension of something they use. That fixed navigation patterns, components and visual language, and the work became extending coherently instead of originating. Under the hood AiSE runs through AgentFleet and Acuity Assistant: a powerful backend with a familiar front end.</p>
+    <p>I treated these decisions as hypotheses and tested them with 7 external users on usertesting.com.</p>
+  </div>
+</section>
+
+<section class="cs-sec" aria-labelledby="s4">
+  <h2 id="s4" class="rv">Designing the workflow</h2>
+  <div class="cs-body rv">
+    <p>The design covered three personas and every screen, from information architecture to a high-fidelity prototype. The Editor Analyst was the MVP focus: the person who starts an editing run, reviews the AI output and makes the final call on each change.</p>
+    <figure class="fig rv"><img src="../assets/img/aise-frame-1171278188.jpg" width="1400" height="905" loading="lazy" alt="The designed workflow, steps 4 to 6: choose a goal, configure and upload reference material, review the edits."><figcaption><a href="../assets/img/aise-frame-1171278188.jpg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <h3>Design problem 1: goal selection</h3>
+    <figure class="fig rv"><img src="../assets/img/aise-4.jpg" width="1400" height="738" loading="lazy" alt="Goal selection screen: four goals, with configuration fields shown only for the selected goal."><figcaption><a href="../assets/img/aise-4.jpg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <p>Four goals (style and grammar, data validation, regulatory flagging, plagiarism detection) each need different configuration. I used progressive disclosure: choosing a goal opens only its own section.</p>
+    <h3>Design problem 2: upload configuration</h3>
+    <figure class="fig rv"><img src="../assets/img/aise-2-upload-file-annotate-sources.jpg" width="1400" height="738" loading="lazy" alt="Upload configuration screen with two paths: upload a local file, or link a SharePoint path."><figcaption><a href="../assets/img/aise-2-upload-file-annotate-sources.jpg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <p>Each goal needs different reference material. Two parallel paths: direct upload for local files, and SharePoint path linking for shared drives. Regulatory guideline books and client style guides live on shared drives, and forcing a download would add steps and risk version drift.</p>
+    <h3>Design problem 3: post-edit review</h3>
+    <figure class="fig rv"><img src="../assets/img/aise-11.jpg" width="1400" height="738" loading="lazy" alt="Post-edit review screen listing each AI-suggested change with context and an accept or reject control."><figcaption><a href="../assets/img/aise-11.jpg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <p>The most research-driven decision. Users needed human oversight of AI output, so the output could not be a finished document. Every suggested change is shown with its context, with accept and reject control per item.</p>
+    <p class="pull">The accept/reject step answers a clearly evidenced user need, not a feature request. It changed the structure of the flow.</p>
+    <p>Rephrasing sits on top as a post-edit refinement, a high-rated capability kept out of the core flow. All three personas (Editor Analyst, Requestor Analyst intake, Supervisor Manager review) work within Acuity Assistant's existing visual system.</p>
+    <p><strong>One unresolved constraint:</strong> configuration needs the right files at hand. A missing style guide or an unlinked SharePoint path turns configuration into a blocker.</p>
+  </div>
+</section>
+
+<section class="cs-sec" aria-labelledby="s5">
+  <h2 id="s5" class="rv">Testing at speed</h2>
+  <div class="cs-body rv">
+    <figure class="fig rv"><img src="../assets/img/aise-testing-rounds-s6-1.jpg" width="1400" height="883" loading="lazy" alt="Two test rounds. Round 1, prototype: flow and navigation only, internal and external cohorts. Round 2, live build: full editing flow under real conditions, internal users only, usertesting.com bypassed. Open gap: supervisor and requestor flows never usability-tested."><figcaption><a href="../assets/img/aise-testing-rounds-s6-1.jpg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <p>There were two rounds, and neither was as rigorous as the timeline deserved. For Round 2 I bypassed usertesting.com: internal users didn't know the platform, and setup would have used time we didn't have.</p>
+    <ul><li><strong>Confirmed:</strong> the flow was intuitive and needed minimal training, which supports the embedding decision for the internal cohort.</li><li><strong>Surfaced:</strong> performance issues under real document conditions, and questions about output accuracy. Both need monitoring after launch, not discovery after launch.</li></ul>
+  </div>
+</section>
+
+<section class="cs-sec" aria-labelledby="s6">
+  <h2 id="s6" class="rv">What shipped and what it cost</h2>
+  <div class="cs-body rv">
+    <figure class="fig rv"><img src="../assets/img/aise-outcomes-s7-1.jpg" width="1400" height="750" loading="lazy" alt="Confirmed after launch: AiSE live with active users, flow intuitive for internal users, minimal training, core flow shipped as designed, accept/reject live. Projected, not yet validated: 40%+ turnaround reduction, error reduction rate, manual versus automated edit ratio, regulatory flagging coverage, no baseline. Critical monitor: output accuracy."><figcaption><a href="../assets/img/aise-outcomes-s7-1.jpg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <p>Most of what was designed shipped, in a domain where no direct competitor matches the same combination of capabilities. Output accuracy is the critical variable. Users here are quality gatekeepers under regulatory exposure, and a tool that flags wrongly or misses inconsistencies creates more work than it removes. The accept/reject layer lets users override AI errors, but only if they catch them.</p>
+    <p>The structural debt of a two-month timeline, named plainly:</p>
+    <ul><li>No second design iteration</li><li>Supervisor and Requestor flows shipped without usability testing</li><li>File format edge cases unresolved</li></ul>
+    <p>None of it was hidden. It was the price of speed. Whether the capability set carries over to other document types and regulatory frameworks is still an open question.</p>
+  </div>
+</section>
+
+<section class="cs-sec" aria-labelledby="s7">
+  <h2 id="s7" class="rv">What I would do differently</h2>
+  <div class="cs-body rv">
+    <p>The research held and the core design decisions held. What is missing is the measurement set-up to know whether the outcome matched the ambition. That is a handoff failure, and mine to own as much as anyone's.</p>
+    <ul><li><strong>Test the live build with external users.</strong> It is credible for the internal cohort and untested for a new client's editor meeting the plugin cold. The external cohort shaped the direction and should have seen the solution.</li><li><strong>Settle who measures success before launch.</strong> The PRD defines the metrics, but not who owns them, how often, or against what baseline. The 40% turnaround reduction sits unverified because nobody was accountable for collecting the data.</li><li><strong>Finish two things.</strong> Usability-test the Supervisor and Requestor flows, which were designed from user stories and domain logic. And design real error states for the configuration step: a missing regulatory document, a failed style-guide upload, an unresolvable SharePoint path.</li></ul>
+  </div>
+</section>
+</main>
+
+<a class="cs-next" href="international-flights.html"><strong>The mystery of international flights</strong><span>Next case study</span></a>
+<footer class="foot"><span>© 2026 Gaurav Harsh</span><a href="../">Back to all work</a></footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

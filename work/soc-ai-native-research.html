@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-native experience for security analysts — Gaurav Harsh</title>
+<meta name="description" content="A solo research study of 6 Tier-2 SOC analysts: where AI can safely take on more of an investigation, and where it can&#x27;t.">
+<meta name="theme-color" content="#0a0d14">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=erode@400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/case.css">
+<script>document.documentElement.className="";</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="mark" href="../">Gaurav Harsh</a>
+  <nav aria-label="Primary"><a href="../#work">Work</a><a href="../#about">About</a></nav>
+  <a class="mail" href="mailto:gauravharsh.design@gmail.com">Email</a>
+</header>
+
+<main id="main">
+<header class="cs-head">
+  <h1 class="rv">AI-native experience for security analysts</h1>
+  <dl><div><dt>Role</dt><dd>Solo researcher, end to end</dd></div><div><dt>For</dt><dd>ServiceNow SecOps</dd></div><div><dt>Methods</dt><dd>6 one-on-one, 60-minute interviews with Tier-2 SOC analysts</dd></div></dl>
+  <p class="lede">You can't optimize for speed and for evidence-gated trust on the same alert. A study of where AI can safely act in a Tier-2 analyst's investigation.</p>
+</header>
+
+<section class="cs-sec" aria-labelledby="s0">
+  <h2 id="s0" class="rv">The tension</h2>
+  <div class="cs-body rv">
+    <figure class="fig rv"><img src="../assets/img/soc-1-key-takeaway.svg" width="1200" height="520" loading="lazy" alt="Two panels. Left: AI adoption is normal, but confidence is low. All 6 participants used AI, while 9% of people industry-wide are very confident in AI-generated conclusions. Right: speed and trust trade off by incident type. Known-bad incidents are fastest and automatable; correlated, ambiguous incidents are faster but not fast; novel, contested incidents are not optimized for speed."><figcaption><a href="../assets/img/soc-1-key-takeaway.svg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <p>I ran this project alone, from meeting notes to the final readout, to find where AI can safely take on more of a Tier-2 analyst's workflow.</p>
+    <p class="pull">&ldquo;I would be much more comfortable if it showed me the evidence behind its conclusion&hellip; linked back to the supporting telemetry.&rdquo;</p>
+  </div>
+</section>
+
+<section class="cs-sec" aria-labelledby="s1">
+  <h2 id="s1" class="rv">How I got there</h2>
+  <div class="cs-body rv">
+    <p><strong>The study:</strong> 6 semi-structured, one-on-one, 60-minute interviews with Tier-2 SOC analysts across different org models and industries. Each participant used a different mix of company-sanctioned and self-directed AI tools. That showed how AI is really used in security work, not only how it is supposed to be used.</p>
+    <div class="tw"><table class="data"><caption class="sr">Interview participants</caption><thead><tr><th scope="col">Session</th><th scope="col">Role</th><th scope="col">Org model</th><th scope="col">Industry</th></tr></thead><tbody><tr><td>P1</td><td>Hybrid L1+L2 SOC analyst</td><td>Tiered global SOC</td><td>Global, multi-region</td></tr><tr><td>P2</td><td>SOC lead</td><td>One-person InfoSec function</td><td>Financial services</td></tr><tr><td>P3</td><td>Tier-2 security analyst</td><td>Tiered, about 4 people</td><td>Tech / cloud</td></tr><tr><td>P4</td><td>Incident response analyst</td><td>End-to-end ownership</td><td>Financial services</td></tr><tr><td>P5</td><td>Tier-2 SOC analyst</td><td>Tiered, mature SOC</td><td>Financial services</td></tr><tr><td>P6</td><td>Cloud security analyst</td><td>Small, single manager</td><td>Logistics</td></tr></tbody></table></div>
+    <p>Tools in use ranged from Claude Code orchestrating GitHub and Splunk CLIs, to Microsoft Copilot narrating an investigation into documentation, to a self-built agent that acts as a read-only Tier-1 analyst.</p>
+    <figure class="fig rv"><img src="../assets/img/soc-ai-native-ux-research-workflow.svg" width="1440" height="2146" loading="lazy" alt="The skill pipeline behind every study, from planning and scoping through instrument design, moderation and capture, to synthesis and readout. Each step lists its tools, connectors and skill files, including a bias-check auditor for the discussion guide."><figcaption><a href="../assets/img/soc-ai-native-ux-research-workflow.svg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+  </div>
+</section>
+
+<section class="cs-sec" aria-labelledby="s2">
+  <h2 id="s2" class="rv">The part that mattered more than I expected</h2>
+  <div class="cs-body rv">
+    <p>Halfway through synthesis I noticed that what analysts asked of AI, evidence linked back to its source, was what I had already built into my own research pipeline.</p>
+    <p>I had added a <strong>bias-check skill</strong> that audited my discussion guide for leading or loaded framing before it reached a participant. A separate <strong>audit skill</strong> checked every AI output at each stage for factual accuracy, hallucination and traceability back to source.</p>
+    <p>The study concluded that trust needs evidence-linking and bias-checking, not only speed. I already hold my own AI-assisted work to that standard.</p>
+  </div>
+</section>
+
+<section class="cs-sec" aria-labelledby="s3">
+  <h2 id="s3" class="rv">A framework for where AI belongs</h2>
+  <div class="cs-body rv">
+    <p>The deliverable that made the findings actionable was a journey map: Discovery, Analysis, Containment/Eradication/Recovery, Review. Each stage of the Tier-2 workflow falls into one of three zones.</p>
+    <ul><li><strong>Automate now:</strong> data gathering and documentation. No decisions or actions are involved, and AI can do it accurately without severe consequences when wrong.</li><li><strong>Evidence chain required:</strong> detection and handoff, correlation and hypothesis. Reasoning has to be visible, because the analyst plans real work from it.</li><li><strong>Human only:</strong> the decision on maliciousness, and coordinating and executing containment. Accountability stays with the analyst, and safety has to beat speed.</li></ul>
+    <p>That gave the team a stage-by-stage answer to &ldquo;where should we build AI into the SOC workspace&rdquo;, instead of a general direction.</p>
+    <figure class="fig rv"><img src="../assets/img/soc-2-journey-map.svg" width="1200" height="1290" loading="lazy" alt="Tier-2 SOC analyst journey from discovery to review. Each stage is labelled Automate now, Evidence-chain required or Human-only, with how AI is used today, a participant quote and why the label fits."><figcaption><a href="../assets/img/soc-2-journey-map.svg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+  </div>
+</section>
+
+<section class="cs-sec" aria-labelledby="s4">
+  <h2 id="s4" class="rv">The ideal AI-native SOC workspace</h2>
+  <div class="cs-body rv">
+    <p>Largely without being asked, analysts described their ideal workspace: a natural-language Unified Investigation Surface with bounded proactive suggestions and personalization over time. An approval layer gates actions, and every output links back to source logs.</p>
+    <figure class="fig rv"><img src="../assets/img/soc-3-ideal-workspace.svg" width="1200" height="700" loading="lazy" alt="The ideal workspace: structured Tier 1 to Tier 2 handoff, auto-correlation across tools, passive real-time documentation, documentation as a training-data pipeline, full automation of known low-risk incidents, and an approval-gated action layer. Directional estimates of time saved per stage, inferred from where analysts say they lose time, not measured."><figcaption><a href="../assets/img/soc-3-ideal-workspace.svg" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <p>The time-saved figures on this diagram are directional. They are inferred from where analysts reported losing the most time, and no session measured them.</p>
+  </div>
+</section>
+
+<section class="cs-sec" aria-labelledby="s5">
+  <h2 id="s5" class="rv">What happened next</h2>
+  <div class="cs-body rv">
+    <p>The recommended next step was to validate the workspace design with customer-side decision-makers, to test real buying intent and not stop at internal validation.</p>
+    <p>This was research produced by an AI-native workflow, held to the evidence-linked, bias-checked standard the study itself argued for.</p>
+    <p><a href="servicenow-research-impact.html">Back to the ServiceNow impact page</a></p>
+  </div>
+</section>
+</main>
+
+<a class="cs-next" href="aise-ai-editing.html"><strong>AiSE, AI-enabled editing</strong><span>Next case study</span></a>
+<footer class="foot"><span>© 2026 Gaurav Harsh</span><a href="../">Back to all work</a></footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
