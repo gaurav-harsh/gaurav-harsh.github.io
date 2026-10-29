@@ -9,3 +9,4 @@
 - 2026-10-29 — Added ponytail, hallmark, humanizer, diagram-design — lean code, alt builder, human-sounding copy, research diagrams.
 - 2026-10-29 — Taste = default builder; hallmark only when named — both are page builders; running both conflicts and wastes tokens.
 - 2026-10-29 — Ponytail hooks/ledger off — writes per-turn logs; not needed.
+- 2026-10-29 — Added scroll-craft, on request only, subtle motion, no kie.ai — hiring managers skim; heavy scroll effects slow reading.

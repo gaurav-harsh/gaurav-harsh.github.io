@@ -20,6 +20,7 @@ and want: problem → method → evidence → decision → measurable outcome. S
 - Look up palettes, font pairs, UX rules → `ui-ux-pro-max` via its `search.py` script (cheap; prefer over reading data files)
 - Any code writing → follow `ponytail` (smallest change, native HTML/CSS first). `/ponytail-review` before commits.
 - Case-study prose, bio, any visible text → write, then pass through `humanizer`. `design:ux-copy` for CTAs/microcopy.
+- Scroll storytelling (case-study reveals, pinned steps) → `scroll-craft` ONLY when asked; keep motion subtle, content readable without it, honour reduced-motion. Never use kie.ai generation.
 - Research artifacts (journey maps, flows, timelines, 2x2s, affinity/process diagrams) → `diagram-design` (static HTML/SVG)
 - Accessibility pass → `design:accessibility-review`
 - Visual check → built-in browser on a local file or `python3 -m http.server`
@@ -44,4 +45,5 @@ and want: problem → method → evidence → decision → measurable outcome. S
 - hallmark — github.com/Nutlope/hallmark @8f6969f (MIT). Image gen off (needs TOGETHER_API_KEY).
 - humanizer — github.com/blader/humanizer @0ef9fe5 (MIT), SKILL.md only.
 - diagram-design — github.com/cathrynlavery/diagram-design @0cf73c3 (MIT).
+- scroll-craft — github.com/nateherkai/scroll-craft @75d81f7 (MIT). kie.ai image/video gen not used.
 - Node-only extras (taste lint/inspect, hallmark sloplint/theme draw) are inactive until Node is installed.
