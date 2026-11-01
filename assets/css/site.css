@@ -5,6 +5,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--step-body)/1.
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
 h1,h2,h3,p{margin:0}
+p,li{text-wrap:pretty}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 ::selection{background:var(--accent);color:var(--accent-ink)}
 .skip{position:absolute;left:var(--margin);top:-60px;background:var(--accent);color:var(--accent-ink);padding:10px 16px;z-index:20}
@@ -85,6 +86,9 @@ h1,h2,h3,p{margin:0}
 .slip .sum{background:var(--paper-ink);color:var(--paper);margin:24px -12px 0;padding:10px 12px;font-weight:600;display:flex;justify-content:space-between}
 .slip-foot{font-size:var(--step-small);margin-top:20px;color:#3b4456}
 .slip-foot a{color:#2f33b8}
+.slip-foot a,.foot a,.thanks .contact a,.fig figcaption a{display:inline-flex;align-items:center;min-height:44px}
+.slip-foot a{font-size:1rem}
+.bar nav a{padding-inline:6px}
 
 /* cv sheet */
 .cv{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;row-gap:64px}
@@ -117,7 +121,7 @@ h1,h2,h3,p{margin:0}
 .proj .fig b{font-family:var(--font-display);font-weight:700;font-size:clamp(2.5rem,1.4rem + 3.4vw,4.5rem);letter-spacing:-.03em;line-height:.95;color:var(--accent)}
 .proj .fig span{font-size:var(--step-small);color:var(--muted)}
 .proj h3{font-family:var(--font-display);font-weight:700;font-size:clamp(1.5rem,1rem + 1.6vw,2.5rem);line-height:1.08;letter-spacing:-.025em;margin:0 0 6px}
-.proj h3 a{text-decoration:none}
+.proj h3 a{text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
 .proj h3 a::after{content:"";position:absolute;inset:0}
 .proj h3 a:hover{color:var(--accent)}
 .proj .kind{font-size:var(--step-small);color:var(--muted);margin-bottom:12px}
@@ -146,7 +150,9 @@ h1,h2,h3,p{margin:0}
  .bar{grid-template-columns:1fr auto}.bar .name{display:none}.bar nav{gap:16px}.bar>:first-child{display:none}.bar nav{justify-self:start}
  .cover .name-hand .doodle{display:none}
  .cover .name-hand{position:static;transform:rotate(-4deg);margin-bottom:24px}
- .cover .tag{display:none}
+ .cover .tag{position:static;margin:-12px 0 24px;font-size:1.375rem}
+ .cover .tag .mk{padding:0}
+ .cover .tag .doodle{display:none}
  .hello,.stats,.cv,.thanks{display:block}
  .hello .lead{margin-top:32px}.hello .side{margin-top:32px}
  .total{font-size:42vw;margin-top:40px}
@@ -168,5 +174,5 @@ h1,h2,h3,p{margin:0}
 }
 
 /* scroll story: the receipt fills as the sheet scrolls; static when motion is off */
-.stats.sc .slip li{opacity:.45;transition:opacity 400ms var(--ease)}
+.stats.sc .slip li{opacity:.7;transition:opacity 400ms var(--ease)}
 .stats.sc .slip li.on{opacity:1}
