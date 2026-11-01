@@ -2,7 +2,7 @@
    Page order: header.case-head > main > section.block* > a.next > footer.foot
    .case-head      page top: h1 (case title), p.lede, dl.facts
    .lede           one-sentence summary under the title
-   .facts          dl of role / duration / methods: grey slab, 3 columns, 1 column under 640px. Each fact is div > dt + dd
+   .facts          dl of role / duration / methods: grey slab, 3 columns (2 when there are four), 1 column under 640px. Each fact is div > dt + dd
    .block          one section: h2 above .block-body (pen rule under the h2)
    .block-body     section body: p, ul, h3, p.pull (ruled pull quote), table, a
    .fig            figure frame: ink border. Children: .fig-panel + figcaption (caption strip, always present)
@@ -19,6 +19,9 @@
 .facts,.cs-head dl{margin:56px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--surface)}
 .facts>div{padding:24px}
 .facts>div+div{border-left:1px solid var(--surface-2)}
+.facts:has(>div:nth-child(4):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}
+.facts:has(>div:nth-child(4):last-child)>div:nth-child(3){border-left:0}
+.facts:has(>div:nth-child(4):last-child)>div:nth-child(n+3){border-top:1px solid var(--surface-2)}
 .facts dt{color:var(--muted);font-size:var(--step-small)}
 .facts dd{margin:2px 0 0}
 .facts dd a,.cs-head dd a{color:var(--accent)}
@@ -57,7 +60,7 @@
 .next:hover strong,.cs-next:hover strong{color:var(--accent)}
 .next-arrow{font-family:var(--font-hand);font-size:clamp(2.5rem,2rem + 2vw,3.5rem);line-height:1;color:var(--pen)}
 @media (max-width:1000px){.fig-panel{padding:12px}.fig figcaption{padding:12px 16px}}
-@media (max-width:640px){.facts,.cs-head dl{grid-template-columns:minmax(0,1fr)}.facts>div{padding:16px 20px}.facts>div+div{border-left:0;border-top:1px solid var(--surface-2)}}
+@media (max-width:640px){.facts,.facts:has(>div:nth-child(4):last-child),.cs-head dl{grid-template-columns:minmax(0,1fr)}.facts>div{padding:16px 20px}.facts>div+div{border-left:0;border-top:1px solid var(--surface-2)}}
 
 .dg{display:block;width:100%;height:auto;font-family:var(--font)}
 .dg-line{fill:none;stroke:#1c1c1e;stroke-width:1.5}
