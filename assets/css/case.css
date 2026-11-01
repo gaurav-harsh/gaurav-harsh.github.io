@@ -9,6 +9,7 @@
    .fig-panel      white panel inside .fig. Add tabindex="0" role="region" aria-label="... (scrolls sideways on narrow screens)" when it holds a wide SVG
    .fig-wide       on a wide SVG: keeps it legible (36rem min) so the panel scrolls instead of shrinking it
    .dg / .ig       diagram and infographic kits (SVG: .dg-*, .sv-*; HTML: .ib .iflow .igrid .ibar .itbl .itime .itree) living inside .fig-panel
+   .fig-open       'Open full size' link in a figcaption (any figcaption link): block-level on its own line, 44px tall
    .tw             wrapper that scrolls a wide table inside its own box (position:relative so .sr text inside cells cannot widen the page); give it tabindex="0" role="region" aria-label when it scrolls
    .next           next-case link, a ruled row: .next-text (span label + strong title) and .next-arrow (aria-hidden)
    Legacy aliases cs-head, cs-sec, cs-body, cs-next are kept only until the other pages are moved to the names above. */
@@ -55,6 +56,7 @@
 .fig img{display:block;width:100%;height:auto}
 .fig figcaption{font-size:var(--step-small);padding:12px 24px;background:var(--surface);color:var(--ink);border-top:1px solid var(--ink)}
 .fig figcaption a{color:#1f4fb8}
+.fig figcaption a,.fig figcaption .fig-open{display:flex;align-items:center;min-height:44px}
 .next,.cs-next{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:44px;margin:var(--section) max(var(--margin),calc((100% - 60rem) / 2));padding:clamp(32px,4vw,48px) 0;border-block:1px solid var(--ink);color:var(--ink);text-decoration:none}
 .next-text{display:flex;flex-direction:column;gap:12px;min-width:0}
 .next-text>span{color:var(--muted);font-size:var(--step-small)}
