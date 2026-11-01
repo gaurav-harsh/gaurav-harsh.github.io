@@ -2,14 +2,14 @@
    Page order: header.case-head > main > section.block* > a.next > footer.foot
    .case-head      page top: h1 (case title), p.lede, dl.facts
    .lede           one-sentence summary under the title
-   .facts          dl of role / duration / methods: grey slab, 3 columns (2 when there are four), 1 column under 640px. Each fact is div > dt + dd
+   .facts          dl of role / duration / methods: grey slab, 3 columns (2 when there are four; five wrap 3 + 2 with a rule between rows), 1 column under 640px. Each fact is div > dt + dd
    .block          one section: h2 above .block-body (pen rule under the h2)
    .block-body     section body: p, ul, h3, p.pull (ruled pull quote), table, a
    .fig            figure frame: ink border. Children: .fig-panel + figcaption (caption strip, always present)
    .fig-panel      white panel inside .fig. Add tabindex="0" role="region" aria-label="... (scrolls sideways on narrow screens)" when it holds a wide SVG
    .fig-wide       on a wide SVG: keeps it legible (36rem min) so the panel scrolls instead of shrinking it
    .dg / .ig       diagram and infographic kits (SVG: .dg-*, .sv-*; HTML: .ib .iflow .igrid .ibar .itbl .itime .itree) living inside .fig-panel
-   .tw             wrapper that scrolls a wide table inside its own box
+   .tw             wrapper that scrolls a wide table inside its own box (position:relative so .sr text inside cells cannot widen the page); give it tabindex="0" role="region" aria-label when it scrolls
    .next           next-case link, a ruled row: .next-text (span label + strong title) and .next-arrow (aria-hidden)
    Legacy aliases cs-head, cs-sec, cs-body, cs-next are kept only until the other pages are moved to the names above. */
 .case-head,.block,.cs-head,.cs-sec{--col:60rem;padding-inline:max(var(--margin),calc((100% - var(--col)) / 2))}
@@ -22,6 +22,8 @@
 .facts:has(>div:nth-child(4):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}
 .facts:has(>div:nth-child(4):last-child)>div:nth-child(3){border-left:0}
 .facts:has(>div:nth-child(4):last-child)>div:nth-child(n+3){border-top:1px solid var(--surface-2)}
+.facts:has(>div:nth-child(5):last-child)>div:nth-child(4){border-left:0}
+.facts:has(>div:nth-child(5):last-child)>div:nth-child(n+4){border-top:1px solid var(--surface-2)}
 .facts dt{color:var(--muted);font-size:var(--step-small)}
 .facts dd{margin:2px 0 0}
 .facts dd a,.cs-head dd a{color:var(--accent)}
@@ -45,7 +47,7 @@
 .block-body table.data th,.cs-body table.data th{width:auto;padding-right:16px;font-weight:600}
 .block-body table.data td,.cs-body table.data td{padding-right:16px}
 .block-body table.data,.cs-body table.data{font-size:.9375rem}
-.tw{overflow-x:auto;margin:1.5em 0}
+.tw{position:relative;overflow-x:auto;margin:1.5em 0}
 .fig{margin:0 0 40px;border:1px solid var(--ink);background:var(--paper);color:var(--paper-ink)}
 .fig-panel{padding:24px;overflow-x:auto}
 .fig-panel:focus-visible{outline-offset:-3px}
