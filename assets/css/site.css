@@ -93,20 +93,24 @@ p,li{text-wrap:pretty}
 .bar nav a{padding-inline:6px}
 
 /* cv sheet */
-.cv{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;row-gap:64px}
-.cv .h2{grid-column:1/-1}
-.cv h3{font-family:var(--font-display);font-weight:700;font-size:clamp(1.75rem,1.2rem + 1.6vw,2.75rem);line-height:1;margin-bottom:20px;letter-spacing:-.02em}
-.cv .exp{grid-column:1/8;grid-row:2/5}
-.cv .edu{grid-column:9/-1;grid-row:2}
-.cv .lang{grid-column:9/-1;grid-row:3}
-.cv .skills{grid-column:9/-1;grid-row:4}
+.cv{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto auto auto auto 1fr;column-gap:24px;row-gap:48px}
+.cv .h2{grid-column:1/-1;margin:0;font-size:clamp(3.5rem,1rem + 9vw,9rem);letter-spacing:-.02em}
+.cv .h2 i{font-style:normal;color:var(--pen)}
+.cv h3{font-family:var(--font-display);font-weight:700;font-size:clamp(1.75rem,1.2rem + 1.6vw,2.25rem);line-height:1;margin:0 0 16px}
+.cv .exp{grid-column:1/9;grid-row:2/6;border-top:2px solid var(--ink)}
+.cv .edu{grid-column:10/-1;grid-row:2}
+.cv .lang{grid-column:10/-1;grid-row:3}
+.cv .skills{grid-column:10/-1;grid-row:4}
 .cv dl{margin:0}
-.cv .job{padding:22px 0;display:grid;grid-template-columns:11rem 1fr;gap:16px}
-.cv .job dt{color:var(--muted);font-size:var(--step-small);padding-top:.25em}
-.cv .job dd{margin:0}
-.cv .job b{display:block;font-family:var(--font-display);font-size:1.5rem;font-weight:500;line-height:1.15}
-.cv .job span{color:var(--muted)}
-.cv ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.cv .job{padding:28px 0;display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;border-bottom:1px solid var(--ink)}
+.cv .job dt{color:var(--muted);font-size:var(--step-small);padding-top:.7em}
+.cv .job dd{margin:0;display:flex;flex-direction:column;gap:6px}
+.cv .job b{font-family:var(--font-display);font-size:clamp(1.625rem,1.2rem + 1.2vw,2.25rem);font-weight:500;line-height:1.1}
+.cv .job span{color:var(--muted);font-size:var(--step-lead)}
+.cv .job p{margin:12px 0 0;max-width:44ch;font-size:var(--step-body);line-height:1.5}
+.cv .edu,.cv .lang,.cv .skills{display:flex;flex-direction:column}
+.cv .edu ul,.cv .lang p,.cv .tools{border-top:2px solid var(--ink);padding-top:14px;margin:0}
+.cv ul{list-style:none;padding:0;display:grid;gap:14px}
 .cv .edu li b{display:block;font-weight:600}
 .cv .edu li span{color:var(--muted)}
 .cv .tools{display:flex;flex-wrap:wrap;gap:8px}
@@ -150,12 +154,15 @@ p,li{text-wrap:pretty}
 
 @media (max-width:1000px){
  .bar>:first-child{display:none}.bar nav{gap:20px}.bar .name{font-size:1.25rem}
- .hello,.cv,.thanks{display:block}
+ .hello,.thanks{display:block}
  .stats .head{display:block}.stats .head .h2{white-space:normal}.stats .note{margin-top:24px}
  .slip li{grid-template-columns:150px minmax(0,1fr) 32px;column-gap:20px}
- .cv>*+*{margin-top:56px}
- .cv .exp,.cv .edu,.cv .lang,.cv .skills{grid-row:auto}
- .cv .job{grid-template-columns:1fr;gap:4px}
+ .cv{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;row-gap:40px}
+ .cv .exp{grid-column:1/-1;grid-row:2}
+ .cv .edu{grid-column:1;grid-row:3/5}
+ .cv .lang{grid-column:2;grid-row:3}
+ .cv .skills{grid-column:2;grid-row:4}
+ .cv .job{grid-template-columns:150px minmax(0,1fr);gap:20px}
  .proj{display:block;padding:28px 0}
  .proj .n{display:block;padding-left:0;margin-bottom:6px}
  .proj .fig{margin-top:16px;padding-right:0}
@@ -165,6 +172,10 @@ p,li{text-wrap:pretty}
 @media (max-width:600px){
  .slip{padding:12px 20px 24px}.slip .sum{margin-inline:-20px;padding-inline:20px}.slip .total{font-size:3.5rem}
  .slip li{grid-template-columns:minmax(0,1fr) 24px;column-gap:12px}.slip li b{display:block;grid-column:1}.slip li span:not(.n){grid-column:1}.slip li .n{grid-column:2;grid-row:1/3;align-self:start}
+ .cv{display:block}
+ .cv>*+*{margin-top:40px}
+ .cv .job{grid-template-columns:1fr;gap:4px}
+ .cv .job dt{padding-top:0}
  .cover{min-height:calc(100svh - 92px)}
  .cover .acts .btn{flex:1 1 100%;justify-content:center}
  .bar{padding-block:0;gap:0}
