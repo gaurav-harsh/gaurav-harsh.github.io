@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page not found — Gaurav Harsh</title>
+<meta name="description" content="This page is not in the book. Open one of the seven case studies by Gaurav Harsh, a senior UX designer and researcher, or go back to the portfolio.">
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#1f1f22">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,14 +14,36 @@
 <link rel="stylesheet" href="/assets/css/tokens.css">
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
-<body>
-<main class="cover" style="min-height:100svh">
-  <p class="hand" style="font-size:2.5rem;margin-bottom:40px;position:relative;z-index:2">this page is not in the book</p>
-  <h1 style="font-family:var(--font-display);font-weight:700;font-size:clamp(4rem,15vw,14rem);line-height:.85;letter-spacing:-.04em;display:block">404</h1>
-  <div class="meta" style="opacity:1;animation:none;margin-top:32px">
-    <p class="sub">The link may be old or mistyped.</p>
-    <a class="btn" href="/">Back to the portfolio</a>
+<body class="sheet-dark">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <span>2026</span>
+  <nav aria-label="Primary"><a href="/#hello">About</a><a href="/#work">Work</a><a href="/#contact">Contact</a></nav>
+  <span><a class="name" href="/">Gaurav Harsh</a><span class="where" aria-hidden="true">404</span></span>
+</header>
+
+<main id="main" class="nf">
+  <div class="nf-main">
+    <p class="hand nf-note">this page is not in the book</p>
+    <h1 class="nf-code"><span class="sr">Page not found, error </span>404</h1>
+    <div>
+      <p class="nf-msg">The link may be old or mistyped.</p>
+      <a class="btn" href="/">Back to the portfolio</a>
+    </div>
   </div>
+  <nav class="nf-list" aria-labelledby="nf-cases">
+    <h2 id="nf-cases">Or open a case study</h2>
+    <ol>
+      <li><a href="/work/servicenow-research-impact.html"><span>01</span>My work at ServiceNow</a></li>
+      <li><a href="/work/municipal-bonds.html"><span>02</span>Municipal bonds analysis made easy</a></li>
+      <li><a href="/work/soc-ai-native-research.html"><span>03</span>AI-native experience for security analysts</a></li>
+      <li><a href="/work/aise-ai-editing.html"><span>04</span>AiSE, AI-enabled editing</a></li>
+      <li><a href="/work/international-flights.html"><span>05</span>The mystery of international flights</a></li>
+      <li><a href="/work/nishabd.html"><span>06</span>Ni:Shabd</a></li>
+      <li><a href="/work/aarogya-setu.html"><span>07</span>Aarogya Setu</a></li>
+    </ol>
+  </nav>
 </main>
 </body>
 </html>

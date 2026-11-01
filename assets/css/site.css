@@ -198,3 +198,23 @@ p,li{text-wrap:pretty}
 /* scroll story: the receipt fills as the sheet scrolls; static when motion is off */
 .stats.sc .slip li{opacity:.7;transition:opacity 400ms var(--ease)}
 .stats.sc .slip li.on{opacity:1}
+
+/* 404 page (charcoal sheet, ruled list of case studies) */
+.nf{min-height:calc(100svh - 71px);display:grid;grid-template-columns:minmax(0,1fr);gap:40px;padding:clamp(28px,3.4vw,48px) var(--margin) 40px;align-content:space-between}
+.nf-note{font-size:clamp(2.25rem,1.5rem + 3vw,3.5rem)}
+.nf-code{font-family:var(--font-display);font-weight:700;font-size:min(42vw,25rem);line-height:.82;letter-spacing:-.045em;margin:12px 0 0;margin-left:-.04em}
+.nf-msg{font-size:var(--step-lead);line-height:1.3;margin:24px 0 16px}
+.nf-list h2{font-size:var(--step-small);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.nf-list ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.nf-list li{border-bottom:1px solid var(--surface-2)}
+.nf-list a{display:flex;align-items:center;gap:16px;min-height:48px;padding:4px 0;text-decoration:none;font:700 1.125rem/1.2 var(--font-display)}
+.nf-list a:hover{color:var(--accent)}
+.nf-list a span{font:600 var(--step-small)/1 var(--font);color:var(--muted);width:1.5rem;flex:none}
+@media (min-width:601px){.nf-code{font-size:min(39vw,25rem)}.nf-list a{min-height:52px;font-size:1.3125rem}}
+@media (min-width:1001px){
+ .nf{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:64px;align-content:stretch}
+ .nf-main{display:flex;flex-direction:column;justify-content:space-between}
+ .nf-code{font-size:min(27vw,24rem);margin:0}
+ .nf-list{align-self:end}
+ .nf-list a{min-height:64px;font-size:1.625rem;gap:20px}
+}
