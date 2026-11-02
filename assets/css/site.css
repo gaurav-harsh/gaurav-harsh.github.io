@@ -71,25 +71,7 @@ p,li{text-wrap:pretty}
 @media (max-width:1000px){.hello .side ol{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:600px){.hello .side ol{grid-template-columns:1fr}.hello .side li{padding:12px 0 14px}}
 
-/* impact: one wide receipt, the count is its total */
-.stats .head{display:flex;justify-content:space-between;align-items:flex-end;gap:48px;margin-bottom:56px}
-.stats .head .h2{font-size:clamp(3.5rem,1rem + 9vw,8rem);line-height:1;white-space:nowrap}
-.stats .note{color:var(--muted);max-width:34ch;margin-bottom:12px}
-.slip{background:var(--paper);color:var(--paper-ink);padding:24px 48px 32px;position:relative;margin-bottom:12px;font-size:1.125rem;font-variant-numeric:tabular-nums}
-.slip::after{content:"";position:absolute;left:0;right:0;top:100%;height:12px;background:linear-gradient(135deg,var(--paper) 50%,transparent 50%) 0 0/16px 12px,linear-gradient(225deg,var(--paper) 50%,transparent 50%) 0 0/16px 12px}
-.slip ul{list-style:none;margin:0;padding:0}
-.slip li{display:grid;grid-template-columns:200px minmax(0,1fr) 40px;column-gap:24px;align-items:baseline;padding:14px 0;border-bottom:2px dotted #6b7385}
-.slip li:last-child{border-bottom:0}
-.slip li b{font-weight:600}
-.slip li .n{text-align:right}
-.slip .sum{background:var(--paper-ink);color:var(--paper);margin:16px -24px 0;padding:12px 24px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
-.slip .total{font-family:var(--font-display);font-size:4rem;line-height:1;position:relative;display:inline-block;padding:4px 20px}
-.slip .total .doodle{inset:0;width:100%;height:100%;stroke:var(--pen)}
-.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-.slip-foot{font-size:var(--step-small);margin-top:20px;color:#3b4456}
-.slip-foot a{color:#2f33b8}
-.slip-foot a,.foot a,.thanks .contact a,.fig figcaption a{display:inline-flex;align-items:center;min-height:44px}
-.slip-foot a{font-size:1rem}
+.foot a,.thanks .contact a,.fig figcaption a{display:inline-flex;align-items:center;min-height:44px}
 .bar nav a{padding-inline:6px;min-width:44px;justify-content:center}
 
 /* cv sheet */
@@ -136,6 +118,7 @@ p,li{text-wrap:pretty}
 .proj .txt p:last-child{max-width:56ch}
 
 /* thanks */
+.cv+.thanks{border-top:1px solid var(--ink)}
 .thanks{display:flex;flex-direction:column;gap:48px;padding-bottom:calc(var(--section)/1.5)}
 .thanks-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px}
 .thanks .h2{position:relative}
@@ -160,8 +143,6 @@ p,li{text-wrap:pretty}
 @media (max-width:1000px){
  .bar>:first-child{display:none}.bar nav{gap:20px}.bar .name{font-size:1.25rem}
  .hello{display:block}
- .stats .head{display:block}.stats .head .h2{white-space:normal}.stats .note{margin-top:24px}
- .slip li{grid-template-columns:150px minmax(0,1fr) 32px;column-gap:20px}
  .cv{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;row-gap:40px}
  .cv .exp{grid-column:1/-1;grid-row:2}
  .cv .edu{grid-column:1;grid-row:3/5}
@@ -171,8 +152,6 @@ p,li{text-wrap:pretty}
  .thanks .closing{grid-template-columns:minmax(0,1fr)}
 }
 @media (max-width:600px){
- .slip{padding:12px 20px 24px}.slip .sum{margin-inline:-20px;padding-inline:20px}.slip .total{font-size:3.5rem}
- .slip li{grid-template-columns:minmax(0,1fr) 24px;column-gap:12px}.slip li b{display:block;grid-column:1}.slip li span:not(.n){grid-column:1}.slip li .n{grid-column:2;grid-row:1/3;align-self:start}
  .proj{display:block;padding-inline:0}
  .proj .fig{margin-bottom:24px}
  .proj .fig:empty{display:none}
@@ -195,9 +174,6 @@ p,li{text-wrap:pretty}
  .doodle path{stroke-dashoffset:0}
 }
 
-/* scroll story: the receipt fills as the sheet scrolls; static when motion is off */
-.stats.sc .slip li{opacity:.7;transition:opacity 400ms var(--ease)}
-.stats.sc .slip li.on{opacity:1}
 
 /* 404 page (charcoal sheet, ruled list of case studies) */
 .nf{min-height:calc(100svh - 71px);display:grid;grid-template-columns:minmax(0,1fr);gap:40px;padding:clamp(28px,3.4vw,48px) var(--margin) 40px;align-content:space-between}
