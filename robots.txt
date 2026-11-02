@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gaurav-harsh.github.io/sitemap.xml

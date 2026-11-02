@@ -18,7 +18,7 @@
   --step-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
   --step-head: clamp(3rem, 1rem + 9vw, 9rem);
-  --step-cover: clamp(4rem, 24.6vw, 24rem);
+  --step-cover: clamp(4rem, 24.25vw, 24rem);
 
   --margin: clamp(20px, 3.4vw, 48px);
   --section: clamp(80px, 9vw, 140px);
