@@ -44,7 +44,7 @@ p,li{text-wrap:pretty}
 .cover .tag{font-size:1.5rem;margin-top:-.15em}
 .cover h1{font-family:var(--font-display);font-weight:700;font-size:var(--step-cover);line-height:.82;letter-spacing:-.045em;display:flex;margin-left:-.04em}
 .cover h1 .word{display:flex}
-.cover h1 .l{display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.12em}
+.cover h1 .l{display:block;overflow:hidden;padding:0 .08em .12em 0;margin:0 -.08em -.12em 0}
 .cover h1 b{display:block;font-weight:inherit;transform:translateY(110%);animation:rise 1000ms var(--ease) forwards;animation-delay:calc(var(--i) * 55ms)}
 .cover .meta{display:grid;gap:20px;margin-top:clamp(20px,3vw,32px);padding-top:24px;border-top:1px solid var(--ink);align-items:end;opacity:0;animation:up 800ms var(--ease) 800ms forwards}
 .cover .sub{font-size:var(--step-lead);line-height:1.3}
@@ -53,8 +53,8 @@ p,li{text-wrap:pretty}
 .btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
 .btn.ghost:hover{background:var(--ink);color:var(--bg);opacity:1}
 .cover .sub strong{font-weight:600}
-@media (min-width:601px){.cover .name-hand{font-size:6rem}.cover .tag{font-size:1.875rem}}
-@media (min-width:1001px){.cover h1{font-size:min(17vw,34svh)}.cover .name-hand{font-size:8rem}.cover .tag{font-size:2.25rem}.cover .meta{grid-template-columns:auto 1fr auto;gap:48px}}
+@media (min-width:601px){.cover .acts{justify-content:flex-end}.cover .name-hand{font-size:6rem}.cover .tag{font-size:1.875rem}}
+@media (min-width:1001px){.cover h1{font-size:min(17vw,34svh)}.cover .name-hand{font-size:8rem}.cover .tag{font-size:2.25rem}.cover .meta{grid-template-columns:1fr auto;gap:20px 48px}.cover .sub{display:contents}.cover .sub strong{grid-area:1/1;align-self:end}.cover .acts{grid-area:1/2}.cover .sub .line{grid-area:2/1/3/3;white-space:nowrap}.cover .sub .yrs,.cover .sub .ex{display:inline}.cover .sub .yrs i{display:none}.cover .sub .yrs::after{content:" | "}.cover .acts{justify-content:flex-end}}
 @keyframes rise{to{transform:none}}
 @keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 
